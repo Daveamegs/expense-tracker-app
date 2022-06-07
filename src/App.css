@@ -20,7 +20,7 @@ a{
 }
 
 .main--section{
-  background-color: #bbb;
+  background-color: #eee;
   min-height: 100vh;
   flex: 70%;
   display: flex;
@@ -29,12 +29,13 @@ a{
 }
 
 .sidebar{
-  background-color: #ccc;
+  background-color: #eee;
   height: 100vh;
   flex: 30%;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
+  border-left: 1px solid #ddd;
 }
 
 /* NavBar Styles */
@@ -56,6 +57,13 @@ input[type=search] {
   height: 27px;
   border: none;
   border-radius: 5px;
+  appearance: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type=search]:focus{
+  outline: none;
+  background-color: #fff;
 }
 
 .navbar--nav{
@@ -73,4 +81,136 @@ input[type=search] {
 
 .marginr-0{
   margin-right: 0px !important;
+}
+
+/* Wallet Component Styles */
+.wallet{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.wallet--default{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.wallet--change-default{
+  padding: 10px;
+}
+
+.wallet--change-default h2{
+  color: #16d;
+  font-size: 18px
+}
+
+.wallet--change-default p {
+  font-size: 11px
+}
+
+.options-dropdown{
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.options-dropdown p{
+  font-size: 14px;
+  margin: 0px 30px 0px 10px;
+}
+
+select, select:active, select:focus{
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+/* Overview/Dashboard Area Styling */
+.overview{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.overview h2{
+}
+
+
+/* Categories with big expenses styles */
+.biggest-expense{
+  margin-top: 30px;
+}
+
+.big-expenses{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  /* justify-content: space-between; */
+}
+
+.card{
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card--expense-price{
+  font-size: 12px;
+  
+}
+
+
+/* Profile Bar Styles */
+.profile-bar{
+  /* text-align: end; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.notification-icon{
+  margin-right: 15px;
+}
+
+/* Categories Area Styles */
+.cat-text{
+  margin-top: 15px;
+}
+.categories-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.categories{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.categories--img-desc{
+  display: flex;
+  align-items: center;
+}
+
+.categories--description{
+  padding-left: 8px;
+}
+
+.categories--description h3{
+  font-size: 15px;
+}
+
+.categories--description p{
+  font-size: 11px;
 }
